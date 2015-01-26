@@ -1,0 +1,34 @@
+{
+  "name": "polyglot-readme",
+  "version": "1.0.0",
+  "description": "Lots of programming language snippets together in a single README. Good for testing syntax highlighting themes.",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeke/polyglot-readme"
+  },
+  "keywords": [
+    "readme",
+    "syntax",
+    "highlighting",
+    "color",
+    "mock",
+    "example",
+    "pygments",
+    "gfm",
+    "markup",
+    "markdown"
+  ],
+  "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeke/polyglot-readme/issues"
+  },
+  "homepage": "https://github.com/zeke/polyglot-readme",
+  "devDependencies": {
+    "findit": "^2.0.0",
+    "handlebars": "^2.0.0"
+  }
+}
