@@ -1,6 +1,6 @@
 {
   "name": "polyglot-readme",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Lots of programming language snippets together in a single README. Good for testing syntax highlighting themes.",
   "scripts": {
     "build": "node build.js"
