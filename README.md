@@ -1044,3 +1044,37 @@ class MyClass {
 </body>
 
 ```
+
+## Ruby
+
+```ruby
+require 'spec_helper'
+require 'helper/account'
+require 'ruby-box'
+
+describe RubyBox::File do
+  it "should use missing_method to expose files fields" do
+    file = RubyBox::File.new(@session, @mini_file)
+    file.id.should == '2631999573'
+  end
+
+  it "should load all meta information if reload_meta is called" do
+    # request is called once when reload_meta is automatically executed.
+    RubyBox::Session.any_instance.should_receive(:request).once.and_return(@full_file)
+    session = RubyBox::Session.new
+
+    file = RubyBox::File.new(session, @mini_file)
+    file.size.should == 629644
+  end
+end
+```
+
+### erb
+
+```erb
+<ul>
+  <% for @item in @items -%>
+    <li><%= @item %></li>
+  <% end -%>
+</ul>
+```
